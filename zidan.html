@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="text-gray-900 min-h-screen flex flex-col">
+
+ <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-16 flex-grow">
+        
+        <!-- Left Section: Text Content -->
+        <div class="flex-1 w-full">
+            <!-- Badge -->
+            <div class="bg-gray-200 text-gray-700 text-xs font-semibold px-4 py-1.5 rounded-full w-fit mb-8 flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+                Mahasiswa Aktif
+            </div>
+
+            <!-- Title (Nama) -->
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-4">
+                Hi, Saya <br/> Ahmad Zidan
+            </h1>
+
+            <!-- Subtitle (Prodi) -->
+            <h2 class="text-3xl md:text-4xl serif-font mb-6 text-gray-800">
+                Sistem Informasi<span class="font-sans font-light animate-pulse ml-1">|</span>
+            </h2>
+
+            <!-- Description (NIM, Hobi, Fun Fact) -->
+            <div class="text-gray-600 mb-8 leading-relaxed max-w-lg space-y-3">
+                <p>
+                    <i class="fa-solid fa-id-card w-5 text-gray-400"></i>
+                    <span class="font-semibold text-gray-800">NIM:</span> 2025081049
+                </p>
+                <p>
+                    <i class="fa-solid fa-gamepad w-5 text-gray-400"></i>
+                    <span class="font-semibold text-gray-800">Hobi:</span> Traveling
+                </p>
+                <p>
+                    <i class="fa-solid fa-lightbulb w-5 text-gray-400"></i>
+                    <span class="font-semibold text-gray-800">Fun Fact:</span> Im a Marvel fan
+                </p>
+            </div>
+
+            <!-- Location & Status -->
+            <div class="flex gap-6 mb-8 text-sm text-gray-600 font-medium">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot"></i> Bogor
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> Angkatan 2025
+                </div>
+            </div>
+
+             <!-- Social Links -->
+            <div class="flex items-center gap-6 border-t border-gray-200 pt-8 w-full max-w-md">
+                <span class="text-sm font-semibold text-gray-800">Follow me:</span>
+                <a href="#" class="text-gray-600 hover:text-black transition text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-gray-600 hover:text-[#5865F2] transition text-xl"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/ahmad-zidan-001039347/" class="text-gray-600 hover:text-[#0A66C2] transition text-xl" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hmdzidann/" class="text-gray-600 hover:text-[#E4405F] transition text-xl" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Section: Photo -->
+        <div class="flex-1 w-full flex justify-center md:justify-end">
+            <!-- Ganti URL src di bawah ini dengan URL atau path foto Anda -->
+            <div class="relative w-[300px] md:w-[450px]">
+                <img 
+                    src="zidan.jpeg" 
+                    alt="Foto Profil" 
+                    class="w-full h-auto object-cover rounded-[2rem] shadow-xl border-4 border-white"
+                >
+                <!-- Dekorasi tambahan (opsional, menyesuaikan vibe gambar) -->
+                <div class="absolute -z-10 top-4 -right-4 w-full h-full bg-gray-200 rounded-[2rem]"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
